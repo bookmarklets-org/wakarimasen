@@ -158,6 +158,7 @@
 			{% if post.image %}
 				<span class="filesize">{{ strings.PICNAME }}<a target="_blank" href="{{ (post.image)|expand_image_url }}">{{ (post.image)|basename }}</a>
 				-(<em>{{ post.size }} B, {{ post.width }}x{{ post.height }}</em>)</span>
+				[<a href="http://imgops.com/{{ (post.image)|expand_image_url }}" target="_blank">ImgOps</a>]
 				<span class="thumbnailmsg">{{ strings.THUMB }}</span><br />
 
 				{% if post.thumbnail %}
@@ -241,6 +242,7 @@
 				<br />
 				<span class="filesize">{{ strings.PICNAME }}<a target="_blank" href="{{ (post.image)|expand_image_url }}">{{ (post.image)|basename }}</a>
 				-(<em>{{ post.size }} B, {{ post.width }}x{{ post.height }}</em>)</span>
+				[<a href="http://imgops.com/{{ (post.image)|expand_image_url }}" target="_blank">ImgOps</a>]
 				<span class="thumbnailmsg">{{ strings.THUMB }}</span><br />
 
 				{% if post.thumbnail %}
